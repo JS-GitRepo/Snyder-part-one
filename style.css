@@ -1,0 +1,143 @@
+header {
+    background-color:#70a48b ;
+    display: flex;
+    justify-content:center;
+    align-Items: center;
+    padding: 10px;
+    flex-direction: column;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+body {
+    font-family: 'Work Sans', sans-serif;
+    margin: 0;
+    margin-bottom: 100px;
+}
+
+p {
+    margin-bottom: 30px;
+    margin-top: 1em ;
+    margin-bottom: 1em ;
+}
+
+a {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+#HeaderLogo {
+    width: 66%;
+    padding: 4%;
+}
+
+#HeaderNavMenu {
+    width: 275px;
+    border: 2px solid white;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 5px;
+}
+
+ #HeaderNavMenu ul {
+    font-size: 12px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-left: 0;
+    margin: 5px;
+}
+
+ #HeaderNavMenu ul li#MakeADonationLink {
+    background-color: #1f211c;
+    border-radius: 10px;
+    border: 1px solid #1f211c;
+    padding: 6px 5px;
+}
+
+/* Pads, spoces, and organizes the Main "Body" Content. OurLocationsSection and ImageSection*/
+main {
+    display: flex;
+    padding: 0 30px;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+
+#OurLocationsList li {
+    background-color: #70a48b;
+    width: 330px;
+    border: 3px solid black;
+    position: relative; right: 45px;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 5px;
+}
+
+#ImageSection {
+    max-width: 500px;
+}
+
+footer {
+    background-color: #70a48b;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+#CompactLogo {
+    width: 35px;
+    height: 35px;
+    padding: 8px;
+}
+
+/* Mobile to Desktop Scaling */
+@media screen and (min-width: 768px) {
+    header {
+        justify-content:space-between;
+        flex-direction: row;
+    }
+
+    #HeaderLogo {
+        position: relative; right: 45px;
+    }
+
+    main {
+        justify-content: space-between;
+        flex-direction: row;
+    }
+
+    #OurLocationsSection {
+        width: 33%;
+    }
+
+    #OurLocationsList li {
+        width: auto;
+        max-width: 330px;
+    }
+    
+    #ImageSection {
+        display: flex;
+        flex: initial;
+        flex-direction: column;
+        width: 66%;
+        min-width: 400px;
+        max-width: 700px;
+    /* Intended to make images fit 3 wide 2 tall fullscreen, but have a transition in scaling before fullscreen. */
+    }
+
+    #ImageSection img {
+        margin: 10px 10px;
+    }
+
+}
