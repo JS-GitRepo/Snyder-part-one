@@ -88,6 +88,11 @@ main {
     max-width: 500px;
 }
 
+#ImageSection img{
+    border-radius: 10px;
+    margin: 5px 5px; 
+}
+
 footer {
     background-color: #70a48b;
     position: fixed;
@@ -134,10 +139,6 @@ footer {
         min-width: 400px;
         max-width: 700px;
     /* Intended to make images fit 3 wide 2 tall fullscreen, but have a transition in scaling before fullscreen. */
-    }
-
-    #ImageSection img {
-        margin: 10px 10px;
     }
 
 }
