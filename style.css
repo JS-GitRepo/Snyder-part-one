@@ -85,6 +85,7 @@ main {
 }
 
 #ImageSection {
+    min-width: 425px;
     max-width: 500px;
 }
 
